@@ -32,13 +32,15 @@ plt.figure(figsize=(12, 5))
 for file in labeled_graph:
     subset = df_all[df_all["filename"] == file]
     plt.scatter(subset["X"], subset["Y"], c=subset["Label"], alpha=0.5, label=file)
-
-plt.colorbar(label="Cloud Binary Variable for 1: Cloud, -1: No Cloud, 0: Unlabeled")
+    
+"""
+plt.colorbar(label="Cloud Binary Variable for 1=Cloud, -1=No Cloud, 0=Unlabeled")
 plt.xlabel("X")
 plt.ylabel("Y")
 plt.title("Expert Cloud Labels")
 plt.legend()
 plt.show()
+"""
 
 X = df_all.drop(columns=["X", "Y", "Label", "filename"])
 Y = df_all["Label"]
