@@ -25,7 +25,7 @@ if not data_list:
 
 df_all = pd.concat(data_list, ignore_index=True)
 
-new_col_names = ["X", "Y", "NDAI", "SD", "CORR", "F1", "F2", "F3", "F4", "F5", "Label"]
+new_col_names = ["X", "Y", "NDAI", "SD", "CORR", "DF", "CF", "BF", "AF", "AN", "Label"]
 df_all.columns = new_col_names + ["filename"]
 
 plt.figure(figsize=(12, 5))
@@ -61,7 +61,7 @@ plt.xlabel("Importance score")
 plt.ylabel("Feature")
 plt.show()
 
-top3 = feature_order["Feature"][:3].values  #Select the top three features that we might interested about: SD, NDAI, Feature5
+top3 = feature_order["Feature"][:3].values  #Select the top three features that we might interested about: SD, NDAI, AN
 
 plt.figure(figsize=(12, 5))
 for i, feature in enumerate(top3):
