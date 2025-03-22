@@ -1,0 +1,25 @@
+We have all agreed on these attributions:
+
+Cancan Jin worked on:
+- Writing Intro, discussion, model performance and conclusion part
+- Coding for models
+
+Jaeyeon Lee worked on:
+- EDA part
+- A classifier using XGBoost
+- Writing and checking the report
+
+Minh Le worked on:
+- Draft the EDA part
+- Autoencoder constructing
+- Stability part
+- Writing and checking the report
+
+Zehao Wang worked on:
+- Data analysis, feature engineering part
+- Autoencoder constructing
+- Coding for models
+- Writing and checking the report
+
+
+

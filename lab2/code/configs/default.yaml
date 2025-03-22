@@ -1,0 +1,28 @@
+data:
+  patch_size: 9
+dataloader_train:
+  batch_size: 2048
+  num_workers: 1
+  shuffle: True
+dataloader_val:
+  batch_size: 2048
+  num_workers: 1
+  shuffle: False
+autoencoder:
+  n_input_channels: 8
+  embedding_size: 8
+  sparsity_lambda: 0.001
+optimizer:
+  lr: 0.0001
+trainer:
+  max_epochs: 10
+  log_every_n_steps: 1
+checkpoint:
+  save_top_k: 3
+  monitor: 'val_loss_total'
+  mode: 'min'
+  filename: 'cnn-default-{epoch:03d}-final'
+  dirpath: 'checkpoints'
+wandb:
+  project: 'lab2-autoencoder-CNN-6'
+  name: 'cnn-revised-2'
